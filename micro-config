@@ -1,0 +1,4 @@
+default=/root/now
+couchdb=http://user:pass@localhost:5984
+db=cat
+type=wiki

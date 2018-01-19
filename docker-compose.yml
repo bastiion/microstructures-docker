@@ -1,0 +1,11 @@
+version: '3'
+services:
+  santex_micro:
+    build: .
+    environment:
+     - SSH_KEY=${SSH_KEY}
+    volumes:
+     - ./data-hub:/root/data-hub
+     - ./now:/root/now
+    ports:
+     - "2223:22"
